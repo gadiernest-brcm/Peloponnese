@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#ffffff">
+  <title>הפלופונז הנסתר והמושלם | המדריך המלא ליוון האותנטית</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            aegean: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49',
+            },
+            olive: {
+              100: '#f4f6ee',
+              500: '#84934d',
+              700: '#5c6932',
+              800: '#444e25',
+            },
+            terracotta: {
+              100: '#faede8',
+              500: '#d96846',
+              600: '#c25332',
+            },
+            sand: {
+              50: '#fdfbf7',
+              100: '#f7f2ea',
+              200: '#eee4d4',
+              300: '#dfcfb7',
+            }
+          },
+          fontFamily: {
+            sans: ['Heebo', 'system-ui', 'sans-serif'],
+            serif: ['Cinzel', 'David Libre', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Heebo & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Heebo', sans-serif;
+      background-color: #faf8f5;
+      color: #1f2937;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .cinzel {
+      font-family: 'Cinzel', serif;
+    }
+    .hero-pattern {
+      background: linear-gradient(rgba(12, 74, 110, 0.82), rgba(8, 47, 73, 0.92)),
+                  url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    /* Hide scrollbar for tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-200 selection:text-aegean-950">
+
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-sand-200 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo & Subtitle -->
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-aegean-900 to-aegean-600 flex items-center justify-center text-white shadow-md shadow-aegean-900/20">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div>
+          <span class="text-xl font-black tracking-tight text-aegean-950 block">PELOPONNESE INSIDER</span>
+          <span class="text-xs font-medium text-olive-700 tracking-wider">המדריך המלא לסודות הפלופונז</span>
+        </div>
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 font-medium text-sm text-gray-700">
+        <a href="#discover" class="hover:text-aegean-600 transition">גילוי מקומות</a>
+        <a href="#autumn-foliage" class="hover:text-amber-600 font-bold transition text-amber-800 flex items-center gap-1">
+          <span>🍂</span> ספיישל שלכת
+        </a>
+        <a href="#rivers-nature" class="hover:text-aegean-600 transition">נחלים ומפלים</a>
+        <a href="#wine-food" class="hover:text-aegean-600 transition">יין וקולינריה</a>
+        <a href="#seasons" class="hover:text-aegean-600 transition">לפי עונות השנה</a>
+        <a href="#itineraries" class="hover:text-aegean-600 transition">מסלולים מוכנים</a>
+      </nav>
+
+      <!-- Action & Saved items button -->
+      <div class="flex items-center gap-3">
+        <button onclick="openFavoritesModal()" class="relative p-2.5 rounded-xl border border-sand-300 hover:border-aegean-500 bg-sand-50 hover:bg-white text-aegean-900 transition flex items-center gap-2 text-sm font-semibold">
+          <svg class="w-5 h-5 text-red-500 fill-current" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span class="hidden sm:inline">שמורים</span>
+          <span id="favCount" class="w-5 h-5 bg-terracotta-500 text-white text-xs rounded-full flex items-center justify-center font-bold">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative hero-pattern text-white pt-24 pb-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-300 text-xs sm:text-sm font-medium mb-6">
+        <span>✨</span> המדריך המקיף ביותר בישראל לחצי האי המרתק של יוון
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight mb-6">
+        לגלות את <span class="text-amber-300 underline decoration-terracotta-500 decoration-wavy decoration-2">הפלופונז</span><br>
+        שלא כותבים עליו בספרים
+      </h1>
+      
+      <p class="max-w-3xl mx-auto text-base sm:text-xl text-gray-200 font-normal leading-relaxed mb-10">
+        מפלים טורקיזיים חבויים ביערות, מפרצי סהר אגדיים, כפרי מגדלים מסתוריים בחבל מאני, יינות ארכאיים בנמאה, ומסעדות דגים שבהן השולחן נושק לגלים.
+      </p>
+
+      <!-- Search & quick filter box -->
+      <div class="max-w-2xl mx-auto bg-white rounded-2xl p-2 sm:p-3 shadow-2xl flex flex-col sm:flex-row gap-2 border border-sand-300">
+        <div class="relative flex-1">
+          <span class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-gray-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </span>
+          <input 
+            type="text" 
+            id="searchInput" 
+            oninput="handleSearch()"
+            placeholder="חפש חוף, כפר סודי, נחל, יקב או עיר (למשל: לימני, פולילימניו, ווידוקיליה)..."
+            class="w-full pr-11 pl-4 py-3 rounded-xl bg-gray-50 focus:bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-aegean-500 text-sm font-medium border-0 transition"
+          >
+        </div>
+        <button onclick="scrollToGrid()" class="px-6 py-3 rounded-xl bg-aegean-800 hover:bg-aegean-900 text-white font-bold text-sm transition shadow-md flex items-center justify-center gap-2">
+          <span>גלה הכל</span>
+          <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Korfos Home Base Indicator -->
+      <div class="mt-6 max-w-xl mx-auto bg-white/15 backdrop-blur-md border border-amber-300/40 rounded-2xl py-2 px-4 flex items-center justify-center gap-3 text-xs sm:text-sm text-amber-200">
+        <span class="text-base sm:text-lg">🏡</span>
+        <span>נקודת מוצא מוגדרת: <strong>הבית בקורפוס (Korfos, Corinthia)</strong> — כל הזמנים מחושבים מפתח הבית!</span>
+      </div>
+
+      <!-- Quick Stats bar -->
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-center border-t border-white/15 pt-8">
+        <div class="p-2">
+          <div class="text-3xl font-black text-amber-300">30+</div>
+          <div class="text-xs text-gray-300 mt-1">מקומות סודיים ומסלולים</div>
+        </div>
+        <div class="p-2">
+          <div class="text-3xl font-black text-amber-300">4 עונות</div>
+          <div class="text-xs text-gray-300 mt-1">מטראקים בקיץ ועד סקי בחורף</div>
+        </div>
+        <div class="p-2">
+          <div class="text-3xl font-black text-amber-300">100%</div>
+          <div class="text-xs text-gray-300 mt-1">המלצות אותנטיות ובדוקות</div>
+        </div>
+        <div class="p-2">
+          <div class="text-3xl font-black text-amber-300">0</div>
+          <div class="text-xs text-gray-300 mt-1">מלכודות תיירים המוניות</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- iOS Bottom Tab Bar (Visible on mobile only) -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/90 backdrop-blur-xl border-t border-sand-200/80 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(0,0,0,0.06)] flex justify-around items-center text-[11px] font-semibold text-gray-500">
+    <a href="#discover" class="flex flex-col items-center gap-1 active:scale-95 text-aegean-900 transition">
+      <span class="text-lg">🗺️</span>
+      <span>גילוי</span>
+    </a>
+    <a href="#autumn-foliage" class="flex flex-col items-center gap-1 active:scale-95 text-amber-700 font-bold hover:text-amber-900 transition">
+      <span class="text-lg">🍂</span>
+      <span>שלכת</span>
+    </a>
+    <a href="#rivers-nature" class="flex flex-col items-center gap-1 active:scale-95 hover:text-aegean-900 transition">
+      <span class="text-lg">💧</span>
+      <span>נחלים</span>
+    </a>
+    <a href="#wine-food" class="flex flex-col items-center gap-1 active:scale-95 hover:text-aegean-900 transition">
+      <span class="text-lg">🍷</span>
+      <span>יין ואוכל</span>
+    </a>
+    <a href="#seasons" class="flex flex-col items-center gap-1 active:scale-95 hover:text-aegean-900 transition">
+      <span class="text-lg">🌸</span>
+      <span>עונות</span>
+    </a>
+    <a href="#itineraries" class="flex flex-col items-center gap-1 active:scale-95 hover:text-aegean-900 transition">
+      <span class="text-lg">🧭</span>
+      <span>מסלולים</span>
+    </a>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-24 md:pb-12" id="discover">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+      <div>
+        <span class="text-xs font-bold text-olive-700 uppercase tracking-widest block mb-1">אוצרות נבחרים</span>
+        <h2 class="text-3xl font-black text-aegean-950">סינון לפי קטגוריות חוויה</h2>
+      </div>
+      <div class="text-sm text-gray-500">
+        מציג <span id="itemCount" class="font-bold text-aegean-900">0</span> יעדים מומלצים
+      </div>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
+      <button onclick="setFilter('all')" data-cat="all" class="cat-btn active-tab px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-aegean-900 text-white shadow-sm">
+        ✨ הכל
+      </button>
+      <button onclick="setFilter('foliage')" data-cat="foliage" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-amber-100/70 text-amber-950 hover:bg-amber-200/70 border border-amber-300">
+        🍂 מסלולי שלכת זהובה
+      </button>
+      <button onclick="setFilter('beaches')" data-cat="beaches" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-white text-gray-700 hover:bg-sand-100 border border-sand-300">
+        🏖 חופים עוצרי נשימה
+      </button>
+      <button onclick="setFilter('rivers')" data-cat="rivers" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-white text-gray-700 hover:bg-sand-100 border border-sand-300">
+        💧 נחלים, קניונים ומפלים
+      </button>
+      <button onclick="setFilter('villages')" data-cat="villages" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-white text-gray-700 hover:bg-sand-100 border border-sand-300">
+        🏰 כפרים ועיירות קסומות
+      </button>
+      <button onclick="setFilter('hidden')" data-cat="hidden" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-white text-gray-700 hover:bg-sand-100 border border-sand-300">
+        🤫 פינות נסתרות (סודיות)
+      </button>
+      <button onclick="setFilter('wine-food')" data-cat="wine-food" class="cat-btn px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-white text-gray-700 hover:bg-sand-100 border border-sand-300">
+        🍷 קולינריה וטברנות יין
+      </button>
+    </div>
+
+    <div id="placesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Cards rendered via JavaScript -->
+    </div>
+
+    <!-- Empty search fallback -->
+    <div id="noResults" class="hidden text-center py-20 bg-white rounded-3xl border border-dashed border-gray-300 p-8">
+      <div class="text-5xl mb-4">🗺️</div>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">לא נמצאו תוצאות לחיפוש זה</h3>
+      <p class="text-gray-500 mb-6 text-sm">נסה מילת מפתח אחרת כמו "מפלים", "יין", "מאני", "אלפוניסוס" או לחץ על הצגת הכל.</p>
+      <button onclick="resetSearch()" class="px-5 py-2 rounded-xl bg-aegean-800 text-white font-semibold text-sm">
+        איפוס חיפוש
+      </button>
+    </div>
+
+  </main>
+
+  <section id="autumn-foliage" class="bg-gradient-to-b from-amber-950 via-amber-900 to-stone-900 text-white py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div class="absolute -right-24 -top-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -left-24 -bottom-24 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30 font-bold text-xs uppercase tracking-widest mb-3">
+          <span>🍁</span> הסוד הנעלם של הסתיו האירופי
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-black mb-4">שלכת זהובה ופראית בהרי הפלופונז</h2>
+        <p class="text-amber-100/90 text-base sm:text-lg leading-relaxed">
+          מחשבים שיוון היא רק כחול ולבן? מסוף אוקטובר עד סוף נובמבר, יערות עצי הערמון, עצי הדולב הענקיים בנחלים ושדרות המייפל הופכים את חצי האי לשטיח בוער בצהוב, כתום ובורדו.
+        </p>
+      </div>
+
+      <!-- Korfos Quick Foliage Highlight Box -->
+      <div class="mb-12 bg-gradient-to-r from-amber-500/20 via-orange-600/20 to-amber-500/20 border-2 border-amber-400/50 rounded-3xl p-6 sm:p-8 backdrop-blur-md shadow-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-amber-400/20">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">🏡🍂</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-black text-amber-200">השלכת הכי מרהיבה — במרחק הקצר ביותר מקורפוס</h3>
+              <p class="text-xs sm:text-sm text-gray-300">אתם לא צריכים לנסוע 3 שעות דרומה! המחוז הביתי שלכם (קורינתיה ההררית) מכיל את מוקדי השלכת המרהיבים ביותר במרחק 1:15 עד 1:40 שעות בלבד:</p>
+            </div>
+          </div>
+          <span class="px-3.5 py-1.5 rounded-full bg-amber-400 text-stone-950 font-black text-xs self-start sm:self-auto whitespace-nowrap">
+            טיולי יום קלים מהבית
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Top Spot 1 -->
+          <div class="bg-black/30 rounded-2xl p-4 border border-amber-400/20 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-amber-300 font-bold mb-1">
+                <span>🥇 המקום הכי קרוב לבית</span>
+                <span class="bg-amber-400/20 px-2 py-0.5 rounded-md">1 שעה ו-25 דק׳</span>
+              </div>
+              <h4 class="text-lg font-bold text-white mb-2">טריקלה קורינתיאס ועמק פלאמבוריצה</h4>
+              <p class="text-xs text-gray-300 leading-relaxed mb-3">
+                שלושה כפרי אבן מסורתיים שכיכרותיהם מוצלות בעצי דולב ענקיים שמשירים שטיח זהב, ומעליהם עמק אלפיני שנראה כמו שוויץ.
+              </p>
+            </div>
+            <button onclick="searchFor('Trikala');" class="text-xs font-bold text-amber-300 hover:text-amber-200 text-right">
+              לכרטיס המקום וניווט מהבית ←
+            </button>
+          </div>
+
+          <!-- Top Spot 2 -->
+          <div class="bg-black/30 rounded-2xl p-4 border border-amber-400/20 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-amber-300 font-bold mb-1">
+                <span>🥈 הנסיעה המהירה ביותר</span>
+                <span class="bg-amber-400/20 px-2 py-0.5 rounded-md">1 שעה ו-15 דק׳</span>
+              </div>
+              <h4 class="text-lg font-bold text-white mb-2">רכבת קניון ווראיקוס (דיאקופטו)</h4>
+              <p class="text-xs text-gray-300 leading-relaxed mb-3">
+                נסיעה מהירה על אוטוסטרדת A8 עד לתחנת הרכבת ההיסטורית, ואז טיפוס ברכבת שיניים בתוך קניון עמוק שצמרותיו בוערות בשלכת.
+              </p>
+            </div>
+            <button onclick="searchFor('Vouraikos');" class="text-xs font-bold text-amber-300 hover:text-amber-200 text-right">
+              לכרטיס המקום וניווט מהבית ←
+            </button>
+          </div>
+
+          <!-- Top Spot 3 -->
+          <div class="bg-black/30 rounded-2xl p-4 border border-amber-400/20 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-amber-300 font-bold mb-1">
+                <span>🥉 יער ערמונים ואגם מראה</span>
+                <span class="bg-amber-400/20 px-2 py-0.5 rounded-md">1 שעה ו-40 דק׳</span>
+              </div>
+              <h4 class="text-lg font-bold text-white mb-2">אגם דוקסה וכפר הערמונים קסטניה</h4>
+              <p class="text-xs text-gray-300 leading-relaxed mb-3">
+                אגם צלול המשקף יערות אלונים ודולבים, והכפר קסטניה (שנקרא על שם עצי הערמון שבו) עם פיקניקים סתוויים מושלמים.
+              </p>
+            </div>
+            <button onclick="searchFor('Doxa');" class="text-xs font-bold text-amber-300 hover:text-amber-200 text-right">
+              לכרטיס המקום וניווט מהבית ←
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlights of Autumn Routes -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-amber-500/20 hover:border-amber-400 transition">
+          <div class="text-3xl mb-3">🌰</div>
+          <h3 class="text-xl font-bold text-amber-200 mb-2">יער הערמונים של קסטניצה</h3>
+          <p class="text-xs text-gray-200 leading-relaxed mb-4">
+            כפר אבן מסתורי ברכס פרנון (Parnon) המוקף ביער ערמונים עתיק בן אלפי דונמים. בסוף אוקטובר נערך כאן "פסטיבל הערמונים" המפורסם עם סיידר חם, ערמונים קלויים ושלכת מטריפה.
+          </p>
+          <span class="text-[11px] font-bold text-amber-300 bg-black/30 px-3 py-1.5 rounded-xl inline-block">
+            שיא הצבעים: 20 באוקטובר - 15 בנובמבר
+          </span>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-amber-500/20 hover:border-amber-400 transition">
+          <div class="text-3xl mb-3">🍁</div>
+          <h3 class="text-xl font-bold text-amber-200 mb-2">"דרך האהבה" וקניון מנאלון</h3>
+          <p class="text-xs text-gray-200 leading-relaxed mb-4">
+            בעיירה ויטינה (Vytina) שבארקדיה נמצאת שדרת עצי הדולב והמייפל המכונה "Dromos tis Agapis", שנראית כמו מנהרת זהב זוהרת. סביבה עובר שביל Menalon המפורסם בין שטיחי שלכת.
+          </p>
+          <span class="text-[11px] font-bold text-amber-300 bg-black/30 px-3 py-1.5 rounded-xl inline-block">
+            מתאים ל: הליכה רומנטית וצילום מושלם
+          </span>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-amber-500/20 hover:border-amber-400 transition">
+          <div class="text-3xl mb-3">🚂</div>
+          <h3 class="text-xl font-bold text-amber-200 mb-2">רכבת השיניים בערוץ ווראיקוס</h3>
+          <p class="text-xs text-gray-200 leading-relaxed mb-4">
+            נסיעה ברכבת ההיסטורית (Odontotos) העוברת בתוך קניון עמוק שצמרות עצי הדולב שלו יוצרות גג בצבעי אש מעל המים השוצפים. הנסיעה מסתיימת בעיירת ההר קלבריטה.
+          </p>
+          <span class="text-[11px] font-bold text-amber-300 bg-black/30 px-3 py-1.5 rounded-xl inline-block">
+            חוויה: נסיעה ברכבת בתוך מסדרון צבעים
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Action: Filter to Foliage -->
+      <div class="text-center">
+        <button onclick="setFilter('foliage'); scrollToGrid();" class="px-8 py-3.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-stone-950 font-black rounded-2xl text-sm shadow-xl transition transform active:scale-95 inline-flex items-center gap-2">
+          <span>🍂 צפה בכל 5 יעדי השלכת המומלצים במפה</span>
+          <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="rivers-nature" class="bg-gradient-to-b from-emerald-950 to-slate-900 text-white py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest block mb-2">טבע פראי ומים זורמים</span>
+        <h2 class="text-3xl sm:text-5xl font-black mb-4">הנחלים והמפלים הסודיים של הפלופונז</h2>
+        <p class="text-gray-300 text-base sm:text-lg">
+          רבים חושבים שיוון היא רק איים יבשים וחופים לוהטים. הפלופונז מתהדר בנחלי טורקיז שוצפים, יערות דולב אדירים ומפלים שהיו מקודשים לנימפות המיתולוגיות.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Nature Highlight 1 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-emerald-400/50 transition">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-2xl mb-6">
+            💧
+          </div>
+          <span class="text-xs font-semibold uppercase text-emerald-300 tracking-wider">מסיניה (Messenia)</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">מפלי ובריכות פולילימניו (Polilimnio)</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            מבוך טבעי של 15 בריכות מים צלולות בצבע טורקיז עז המחוברות בסדרת מפלים עוצרי נשימה בתוך קניון עמוק וירוק. המקום מרגיש כמו ג'ונגל טרופי בלב יוון.
+          </p>
+          <div class="bg-black/30 rounded-2xl p-4 text-xs text-gray-200 space-y-2 border border-white/5">
+            <div class="flex items-center gap-2">
+              <span class="text-amber-400 font-bold">איך להגיע:</span>
+              <span>ליד הכפר Kazarma, כ-30 דקות מקלמטה. הליכה בינונית של 20 דק' עם סנדלי הליכה/מים.</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400 font-bold">טיפ של מקומיים:</span>
+              <span>המשיכו עד לבריכה העליונה (Kadi Lake) למפל הגדול והקפיצה למים הקרירים והמרעננים!</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nature Highlight 2 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-emerald-400/50 transition">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-2xl mb-6">
+            🌿
+          </div>
+          <span class="text-xs font-semibold uppercase text-emerald-300 tracking-wider">ארקדיה (Arcadia)</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">ערוץ נחל לוסיאוס (Lousios Gorge)</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            המכונה "גרנד קניון של הפלופונז". נחל שוצף מוקף צמחייה עבותה ומנזרים תלויים התלויים על צוקים אנכיים, כמו מנזר פילוסופו ומנזר פרודרומו המדהים.
+          </p>
+          <div class="bg-black/30 rounded-2xl p-4 text-xs text-gray-200 space-y-2 border border-white/5">
+            <div class="flex items-center gap-2">
+              <span class="text-amber-400 font-bold">פעילות מומלצת:</span>
+              <span>טרק מרהיב בין הכפרים דימיטסנה (Dimitsana) וסטמניצה (Stemnitsa), או רפטינג סוער באביב.</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400 font-bold">החוויה:</span>
+              <span>עצירה לקפה ורחת-לוקום אצל הנזירים במנזר התלוי המשקיף על התהום.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nature Highlight 3 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-emerald-400/50 transition">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-2xl mb-6">
+            🌊
+          </div>
+          <span class="text-xs font-semibold uppercase text-emerald-300 tracking-wider">איליה / מסיניה (Neda River)</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">מפלי נהר נדה (Neda Waterfalls)</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            הנהר היחיד ביוון שנושא שם נקבי של נימפה. קניון מסתורי עם מעברי מים צלולים, מפל עוצמתי שנופל לבריכת אמרלד טבעית, ומערות נטיפים קסומות.
+          </p>
+          <div class="bg-black/30 rounded-2xl p-4 text-xs text-gray-200 space-y-2 border border-white/5">
+            <div class="flex items-center gap-2">
+              <span class="text-amber-400 font-bold">סודיות:</span>
+              <span>מעט מאוד תיירים זרים מגיעים לכאן עקב כבישי גישה מפותלים.</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400 font-bold">חובה להביא:</span>
+              <span>נעלי מים עמידות ומצלמה עמידה במים. מתאים מאוד לחודשים מאי עד אוקטובר.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Planitero Springs callout -->
+      <div class="mt-12 bg-white/5 border border-white/15 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+          <div class="inline-block px-3 py-1 bg-amber-400 text-aegean-950 font-bold text-xs rounded-full">פנינה קולינרית בלב הטבע</div>
+          <h4 class="text-2xl font-bold">מעיינות פלאניטרו (Planitero Springs)</h4>
+          <p class="text-gray-300 text-sm max-w-3xl">
+            יער עצי דולב ענקיים שמימיו המפכים יוצרים פלגי מים תחת כל עץ. לצד המעיינות יושבות טברנות מקומיות המגישות פורל טרי (Trout / פסטרופה) שנידוג מבריכות הגידול של הנחל באותו הרגע, מטוגן בחמאת כפר או צלוי על גחלים.
+          </p>
+        </div>
+        <a href="#placesGrid" onclick="searchFor('Planitero')" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-2xl text-sm whitespace-nowrap transition">
+          צפה בפרטי המקום
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="wine-food" class="py-20 px-4 sm:px-6 lg:px-8 bg-sand-50 border-y border-sand-200">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-terracotta-500 font-bold text-xs uppercase tracking-widest block mb-2">טעימות מחצי האי</span>
+        <h2 class="text-3xl sm:text-5xl font-black text-aegean-950 mb-4">יין אלוהי וקולינריה שורשית</h2>
+        <p class="text-gray-600 text-base sm:text-lg">
+          מחבל נמאה – "בורדו של יוון", דרך מטעי הזיתים של קלמטה ועד לטברנות הדגים של מאני שבהן תאכלו עם הרגליים במים.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-sand-200 hover:shadow-md transition">
+          <div class="text-3xl mb-4">🍇</div>
+          <h3 class="font-bold text-lg text-aegean-950 mb-2">ארץ האגיורגיטיקו (Nemea)</h3>
+          <p class="text-xs text-gray-600 leading-relaxed mb-4">
+            נמאה היא אזור היין האדום החשוב ביוון, הידוע בכינוי "דם הרקולס". זן הענבים המקומי Agiorgitiko מפיק יינות עמוקים, קטיפתיים ועשירים.
+          </p>
+          <div class="text-xs font-semibold text-terracotta-600 bg-terracotta-100/60 p-2.5 rounded-xl">
+            יקבים מומלצים: Domaine Skouras, Semeli Estate, Gaia Wines.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-sand-200 hover:shadow-md transition">
+          <div class="text-3xl mb-4">🫒</div>
+          <h3 class="font-bold text-lg text-aegean-950 mb-2">זהב שחור ומסיק בקלמטה</h3>
+          <p class="text-xs text-gray-600 leading-relaxed mb-4">
+            שמן הזית של אזור מסיניה נחשב לטוב ביותר בעולם. זיתי קלמטה בשרניים, לחם כפרי חם וממרחי פבה (Fava) לימוניים.
+          </p>
+          <div class="text-xs font-semibold text-olive-800 bg-olive-100 p-2.5 rounded-xl">
+            עצירת חובה: שוק האוכל הפתוח של קלמטה בימי רביעי ושבת בבוקר.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-sand-200 hover:shadow-md transition">
+          <div class="text-3xl mb-4">🐟</div>
+          <h3 class="font-bold text-lg text-aegean-950 mb-2">דגי ים בטברנות לימני (Limeni)</h3>
+          <p class="text-xs text-gray-600 leading-relaxed mb-4">
+            בכפר לימני המפרץ נראה כמו בריכת שחייה שקופה. השולחנות של טברנת Takis מונחים ממש על שפת המים כשהדייגים מביאים את השלל ישר למטבח.
+          </p>
+          <div class="text-xs font-semibold text-aegean-700 bg-aegean-50 p-2.5 rounded-xl">
+            מנת הדגל: לברק או פרידה צלויים בשמן זית ולימון עם סלט חורטה הררי.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-sand-200 hover:shadow-md transition">
+          <div class="text-3xl mb-4">🍯</div>
+          <h3 class="font-bold text-lg text-aegean-950 mb-2">מעדני חבל מאני הייחודיים</h3>
+          <p class="text-xs text-gray-600 leading-relaxed mb-4">
+            המטבח של מאני ספרטני אך עשיר בטעמים: סיגלינו (Syglino - בשר מעושן בעצי תפוז ומרווה), לאלאנגיה (רצועות בצק פריכות מטוגנות) ודבש טימין פראי.
+          </p>
+          <div class="text-xs font-semibold text-amber-800 bg-amber-50 p-2.5 rounded-xl">
+            נסו ב: כפרי האבן אראופולי (Areopoli) וקרדמילי (Kardamyli).
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="seasons" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-aegean-700 font-bold text-xs uppercase tracking-widest block mb-2">מתי הכי נכון לבקר?</span>
+      <h2 class="text-3xl sm:text-5xl font-black text-aegean-950 mb-4">הפלופונז בארבע עונות</h2>
+      <p class="text-gray-600 text-base sm:text-lg">
+        לפלופונז יש יתרון ענק על פני איי יוון: הוא יעד פעיל, קסום ומרתק לאורך כל השנה – מקיץ חופי ועד חורף מושלג.
+      </p>
+    </div>
+
+    <!-- Season Tabs Buttons -->
+    <div class="flex justify-center mb-8 gap-2 sm:gap-4 flex-wrap">
+      <button onclick="switchSeason('spring')" id="btn-spring" class="season-btn active-season px-6 py-3 rounded-2xl font-bold text-sm transition bg-emerald-600 text-white shadow-md">
+        🌸 אביב (אפריל - יוני)
+      </button>
+      <button onclick="switchSeason('summer')" id="btn-summer" class="season-btn px-6 py-3 rounded-2xl font-bold text-sm transition bg-white text-gray-700 hover:bg-sand-100 border border-sand-300">
+        ☀️ קיץ (יולי - אוגוסט)
+      </button>
+      <button onclick="switchSeason('autumn')" id="btn-autumn" class="season-btn px-6 py-3 rounded-2xl font-bold text-sm transition bg-white text-gray-700 hover:bg-sand-100 border border-sand-300">
+        🍂 סתיו (ספטמבר - נובמבר)
+      </button>
+      <button onclick="switchSeason('winter')" id="btn-winter" class="season-btn px-6 py-3 rounded-2xl font-bold text-sm transition bg-white text-gray-700 hover:bg-sand-100 border border-sand-300">
+        ❄️ חורף (דצמבר - מרץ)
+      </button>
+    </div>
+
+    <!-- Season Content Displays -->
+    <div id="seasonContent" class="bg-white rounded-3xl p-8 sm:p-12 border border-sand-200 shadow-xl transition-all duration-300">
+      <!-- Injected by script -->
+    </div>
+  </section>
+
+  <section id="itineraries" class="bg-aegean-950 text-white py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-bold text-xs uppercase tracking-widest block mb-2">תכנון טיול בקליק</span>
+        <h2 class="text-3xl sm:text-5xl font-black mb-4">מסלולי טיול מומלצים מראש</h2>
+        <p class="text-gray-300 text-base">
+          בחר את משך הזמן שעומד לרשותך וקבל שלד מסלול מושלם הכולל את השילוב המדויק בין ים, כפרים, טבע ונסיעות נופיות.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Itinerary 1 -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:bg-white/10 transition">
+          <div>
+            <div class="inline-block px-3 py-1 bg-amber-400/20 text-amber-300 rounded-full text-xs font-bold mb-4">
+              גיחה מרוכזת • 4 ימים
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-white">קלאסיקת מזרח: נאפפליו ויין נמאה</h3>
+            <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+              אידיאלי לסופ"ש ארוך או גיחה קצרה מאתונה (שעתיים נסיעה). שילוב רומנטי של עיר נמל ונציאנית, יקבים ואתרי מורשת עולמית.
+            </p>
+            <ul class="text-xs text-gray-300 space-y-3 mb-6">
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">יום 1:</span> יציאה מאתונה, תעלת קורינתוס, טעימות יין ביקבי נמאה, לינה בנאפפליו היפהפייה.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">יום 2:</span> מבצר פלמידי (Palamidi) 999 המדרגות, שייט למבצר בורצי, ערב רומנטי בסמטאות.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">יום 3:</span> ביקור בתיאטרון אפידאורוס העתיק, חוף קנדיה (Kandia) השקט ומסעדת דגים.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">יום 4:</span> מיקנה העתיקה (שער האריות) וחזרה קלה לשדה התעופה.
+              </li>
+            </ul>
+          </div>
+          <button onclick="filterItineraryByRegion('east')" class="w-full py-3 bg-white/10 hover:bg-white/20 rounded-xl text-xs font-bold transition text-amber-300">
+            הצג יעדים במסלול זה ↓
+          </button>
+        </div>
+
+        <!-- Itinerary 2 -->
+        <div class="bg-gradient-to-b from-aegean-900 to-aegean-950 border-2 border-amber-400/60 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative shadow-2xl">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-aegean-950 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider">
+            המסלול הפופולרי ביותר ⭐
+          </div>
+          <div>
+            <div class="inline-block px-3 py-1 bg-amber-400/20 text-amber-300 rounded-full text-xs font-bold mb-4 mt-2">
+              המיטב של הפלופונז • 7 ימים
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-white">מאני, חופי טורקיז ומבצרים חבויים</h3>
+            <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+              השילוב המנצח של הנופים הכי מרהיבים: מפרץ הסהר בווידוקיליה, מגדלי האבן של מאני, ועיירת האי מונמבסיה.
+            </p>
+            <ul class="text-xs text-gray-300 space-y-3 mb-6">
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">ימים 1-2:</span> חוף ווידוקיליה (Voidokilia), מצודת פילוס ומטעי הזיתים של מסיניה.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">יום 3:</span> טבילה במפלי פולילימניו ונסיעה נופית אל תוך חבל מאני הפראי.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">ימים 4-5:</span> כפרי המגדלים של ואת'יה (Vathia), שחייה במימי הטורקיז של לימני, וסמטאות אראופולי.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">ימים 6-7:</span> מונמבסיה (Monemvasia) - "גיברלטר של יוון", חוף סימוס באלפוניסוס.
+              </li>
+            </ul>
+          </div>
+          <button onclick="filterItineraryByRegion('south')" class="w-full py-3 bg-amber-400 hover:bg-amber-300 text-aegean-950 rounded-xl text-xs font-black transition">
+            הצג יעדים במסלול זה ↓
+          </button>
+        </div>
+
+        <!-- Itinerary 3 -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:bg-white/10 transition">
+          <div>
+            <div class="inline-block px-3 py-1 bg-amber-400/20 text-amber-300 rounded-full text-xs font-bold mb-4">
+              ההרפתקה המלאה • 10-12 ימים
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-white">גרנד טור: הרים שוצפים וסודות חוף</h3>
+            <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+              מסע מעגלי מושלם המשלב את כפרי ההרים של ארקדיה, קניוני נחלים, רכבת השיניים של קלבריטה, וכל קו החוף הדרומי.
+            </p>
+            <ul class="text-xs text-gray-300 space-y-3 mb-6">
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">ימים 1-3:</span> כפרי ההרים של ארקדיה (דימיטסנה), הליכה בערוץ לוסיאוס ומנזרים תלויים.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">ימים 4-7:</span> חצי האי מסיניה וחבל מאני, מערות דירוס (Diros Caves) בסירה.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">ימים 8-10:</span> קיפאריסי המבודד בפיורד, מונמבסיה ונאפפליו.
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-400 font-bold">ימים 11-12:</span> נסיעה ברכבת הקניון בקלבריטה (Odontotos) וסיום בקורינתוס.
+              </li>
+            </ul>
+          </div>
+          <button onclick="setFilter('all')" class="w-full py-3 bg-white/10 hover:bg-white/20 rounded-xl text-xs font-bold transition text-amber-300">
+            הצג את כל 30+ היעדים ↓
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-8 sm:p-12">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="p-3 bg-amber-500 text-white rounded-2xl text-xl">💡</span>
+        <div>
+          <h3 class="text-2xl font-black text-aegean-950">טיפים קריטיים של מקומיים (Insider Hacks)</h3>
+          <p class="text-xs text-amber-900 font-medium">דברים שיחסכו לכם שעות נהיגה, כסף ועוגמת נפש</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+        <div class="bg-white/80 p-5 rounded-2xl border border-amber-100 shadow-sm">
+          <div class="font-bold text-aegean-900 mb-1 flex items-center gap-2">
+            <span>🚗</span> רכב שכור קומפקטי אך עם מנוע חזק
+          </div>
+          <p class="text-gray-600 text-xs leading-relaxed">
+            הכבישים בחבל מאני ובארקדיה הרריים, מפותלים וצרים ביותר. אל תשכרו רכב ענק (SUV רחב) שיקשה על מעבר בסמטאות אבן של כפרים ישנים, אך ודאו שיש לו מספיק כוח לעליות תלולות.
+          </p>
+        </div>
+
+        <div class="bg-white/80 p-5 rounded-2xl border border-amber-100 shadow-sm">
+          <div class="font-bold text-aegean-900 mb-1 flex items-center gap-2">
+            <span>👟</span> נעלי מים עמידות זה חובה
+          </div>
+          <p class="text-gray-600 text-xs leading-relaxed">
+            רוב החופים המבודדים והנחלים (כמו פולילימניו ונדה) כוללים חלוקי נחל, סלעי גיר חלקלקים או קיפודי ים. נעלי מים יאפשרו לכם להיכנס למים בביטחון ולטפס על סלעים.
+          </p>
+        </div>
+
+        <div class="bg-white/80 p-5 rounded-2xl border border-amber-100 shadow-sm">
+          <div class="font-bold text-aegean-900 mb-1 flex items-center gap-2">
+            <span>⏰</span> שעות הטברנות והסייסטה
+          </div>
+          <p class="text-gray-600 text-xs leading-relaxed">
+            בפלופונז האותנטי, טברנות כפריות פותחות צהריים מאוחרים (14:00-16:00) וארוחת הערב מתחילה רק סביב 20:30-21:00. בין 15:00 ל-17:30 הכפרים נמים.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="placeModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-white rounded-t-[2rem] sm:rounded-3xl max-w-2xl w-full max-h-[92vh] sm:max-h-[90vh] overflow-y-auto shadow-2xl border border-sand-300 relative animate-in fade-in zoom-in-95 duration-200 pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:pb-0">
+      
+      <!-- iOS Sheet Handle (Mobile visual cue) -->
+      <div class="sm:hidden w-12 h-1.5 bg-gray-300 rounded-full mx-auto mt-3 mb-1"></div>
+
+      <!-- Close button -->
+      <button onclick="closeModal()" class="absolute top-4 left-4 z-10 w-9 h-9 sm:w-10 sm:h-10 bg-gray-100 hover:bg-gray-200 active:scale-95 text-gray-800 rounded-full flex items-center justify-center shadow-sm transition">
+        ✕
+      </button>
+
+      <div id="modalContent">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <div id="favoritesModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-white rounded-t-[2rem] sm:rounded-3xl max-w-lg w-full p-6 sm:p-8 max-h-[85vh] overflow-y-auto shadow-2xl relative pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:pb-8">
+      <div class="sm:hidden w-12 h-1.5 bg-gray-300 rounded-full mx-auto -mt-2 mb-4"></div>
+      <button onclick="closeFavoritesModal()" class="absolute top-4 left-4 w-9 h-9 bg-gray-100 hover:bg-gray-200 active:scale-95 text-gray-800 rounded-full flex items-center justify-center transition">
+        ✕
+      </button>
+      <div class="flex items-center gap-2 mb-6">
+        <span class="text-2xl">❤️</span>
+        <h3 class="text-2xl font-black text-aegean-950">המקומות ששמרת לטיול</h3>
+      </div>
+      <div id="favoritesList" class="space-y-3">
+        <!-- Rendered dynamically -->
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+        <button onclick="clearAllFavorites()" class="text-xs text-red-500 hover:underline">
+          נקה את כל הרשימה
+        </button>
+        <button onclick="closeFavoritesModal()" class="px-5 py-2.5 bg-aegean-900 text-white rounded-xl text-xs font-bold">
+          חזור למדריך
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-slate-950 text-gray-400 py-12 px-4 border-t border-slate-800 text-center text-xs">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="text-white font-bold text-base">מדריך הפלופונז האולטימטיבי 🇬🇷</div>
+      <p class="text-gray-400 max-w-xl mx-auto">
+        נבנה באהבה עבור מטיילים המחפשים את יוון של פעם – יין משובח, נחלים צלולים, חופים נטושים ואנשים חמים ומסבירי פנים.
+      </p>
+      <div class="text-gray-600 pt-4">
+        טיפ זהב: שמרו את הדף בסימניות (Bookmarks) לקריאה אופליין במהלך הטיול.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Rich database of Peloponnese destinations
+    const placesData = [
+      {
+        id: 'voidokilia',
+        title: 'חוף ווידוקיליה (Voidokilia Beach)',
+        greekTitle: 'Βοϊδοκοιλιά',
+        category: 'beaches',
+        region: 'south',
+        regionName: 'מסיניה (Messenia)',
+        korfosDist: '215 ק"מ • כ-2.5 שעות',
+        korfosRoute: 'דרך אוטוסטרדת A7 דרך טריפולי וקלמטה לכיוון פילוס',
+        badge: 'חובה לכל מטייל',
+        tagColor: 'bg-sky-100 text-sky-800',
+        shortDesc: 'מפרץ עגול ומושלם כחצי סהר בצורת האות היוונית אומגה (Ω), מים רגועים וחול זהב רך.',
+        fullDesc: 'נחשב לאחד החופים היפים והמפורסמים בים התיכון. המפרץ סגור כמעט לחלוטין ולכן המים רגועים, רדודים וחמימים כמו בריכה טבעית. מעל החוף ניצבת מערת נסטור המיתולוגית וחורבות מבצר נבארינו העתיק (Palaiokastro) שממנו נשקף נוף פנורמי מטורף.',
+        insiderTip: 'הגיעו לפני 09:30 בבוקר או אחרי 17:00 לקראת השקיעה כדי להימנע מהחום ומההמונים. אין במקום שמשיות או קיוסקים (שמורת טבע מוגנת) – הצטיידו במים ושמשייה מראש!',
+        coordinates: '36.9658° N, 21.6625° E',
+        bestSeason: 'מאי עד אוקטובר',
+        tags: ['חוף חולי', 'טבע מוגן', 'נוף פנורמי', 'שקיעות']
+      },
+      {
+        id: 'polilimnio',
+        title: 'בריכות ומפלי פולילימניו (Polilimnio)',
+        greekTitle: 'Πολυλίμνιο',
+        category: 'rivers',
+        region: 'south',
+        regionName: 'מסיניה (Messenia)',
+        korfosDist: '190 ק"מ • כ-2 שעות ו-15 דק׳',
+        korfosRoute: 'חיבור לאוטוסטרדת A7 דרך קורינתוס-טריפולי, ירידה לקלמטה וקזרמה',
+        badge: 'סודי ומדהים',
+        tagColor: 'bg-emerald-100 text-emerald-800',
+        shortDesc: '15 בריכות טורקיז חבויות ביער עבות עם מפלים צוננים לקפיצה ולשחייה מרעננת.',
+        fullDesc: 'ערוץ נחל מוצל ומרהיב שנפתח לסדרה של בריכות מים טבעיות בצבעי טורקיז ואזמרגד. השביל עובר בין גשרי עץ קטנים וסולמות ברזל קצרים. הבריכה העליונה (Kadi) מציעה מפל שוצף מגובה של כ-20 מטרים שמתחתיו ניתן לשחות.',
+        insiderTip: 'נעלו סנדלי שורש/הליכה עם אחיזה טובה בסלעים רטובים. המים קרים מאוד גם בשיא אוגוסט – זהו המפלט האולטימטיבי מיום חמסין!',
+        coordinates: '36.9833° N, 21.8500° E',
+        bestSeason: 'יוני עד ספטמבר',
+        tags: ['נחל זורם', 'מפלים', 'שחייה במים מתוקים', 'צל וקרירות']
+      },
+      {
+        id: 'limeni',
+        title: 'לימני – מפרץ הטורקיז של מאני (Limeni)',
+        greekTitle: 'Λιμένι',
+        category: 'villages',
+        region: 'south',
+        regionName: 'חבל מאני (Mani)',
+        korfosDist: '225 ק"מ • כ-2 שעות ו-50 דק׳',
+        korfosRoute: 'כביש A7 דרומה דרך טריפולי וספרטה, ירידה למפרץ איטילו',
+        badge: 'קולינריה ונוף',
+        tagColor: 'bg-indigo-100 text-indigo-800',
+        shortDesc: 'כפר אבן דרמטי שבו בתי מגדל עתיקים פוגשים ים בצבע טורקיז בוהק וטברנות דגים מעולות.',
+        fullDesc: 'אחד המקומות המהפנטים ביוון. אין כאן חוף חולי, אלא פלטפורמות סלע ומזחים קטנים שמהם קופצים ישר לתוך מים צלולים לחלוטין שמתוכם רואים צבי ים ענקיים שוחים בשלווה. הבתים בנויים מאבן מסותתת שמאפיינת את בני מאני הלוחמים.',
+        insiderTip: 'הזמינו שולחן מראש בטברנת הדגים של "טאקיס" (Takis Fish Taverna) או "קורימאס" לשעת השקיעה. צפו בצבי הים המגיעים לאכול ליד המזח!',
+        coordinates: '36.6789° N, 22.3789° E',
+        bestSeason: 'כל השנה (שחייה: מאי-אוקטובר)',
+        tags: ['טברנת דגים', 'צבי ים', 'בתי מגדל', 'שקיעה מושלמת']
+      },
+      {
+        id: 'nemea',
+        title: 'דרך היין של נמאה (Nemea Wine Route)',
+        greekTitle: 'Νεμέα',
+        category: 'wine-food',
+        region: 'east',
+        regionName: 'קורינתיה (Corinthia)',
+        korfosDist: '68 ק"מ • כ-55 דקות בלבד 🚗',
+        korfosRoute: 'נסיעה קצרה דרך סופיקו ואיסתמיה לעבר כביש A7 המהיר',
+        badge: 'קרוב לבית • 55 דק׳',
+        tagColor: 'bg-rose-100 text-rose-800',
+        shortDesc: 'בירת היין האדום של יוון – כרמים עתיקים, יקבי בוטיק מעוצבים וזן ה-Agiorgitiko האגדי.',
+        fullDesc: 'עמק יפהפה מוקף גבעות המיושב עוד מימי המיתולוגיה (כאן הרג הרקולס את האריה מנמאה). עשרות יקבי בוטיק מציעים סיורים וטעימות יין לצד גבינות מקומיות ושמן זית איכותי. היין המקומי מתאפיין בניחוחות פירות יער ותבלינים חמים.',
+        insiderTip: 'אל תפספסו ביקור ביקב Domaine Skouras המפורסם וב-Semeli Estate הממוקם על פסגה גבוהה עם נוף משכר של כל העמק.',
+        coordinates: '37.8183° N, 22.6644° E',
+        bestSeason: 'ספטמבר-אוקטובר (בציר) או אביב',
+        tags: ['יין בוטיק', 'טעימות יין', 'נוף כרמים', 'קולינריה']
+      },
+      {
+        id: 'monemvasia',
+        title: 'מונמבסיה – העיר בתוך הסלע (Monemvasia)',
+        greekTitle: 'Μονεμβασιά',
+        category: 'villages',
+        region: 'south',
+        regionName: 'לקוניה (Laconia)',
+        korfosDist: '235 ק"מ • כ-3 שעות נסיעה',
+        korfosRoute: 'נסיעה מהירה דרך A7 לספרטה ומשם בכביש דרומי יפהפה עד האי-סלע',
+        badge: 'רומנטיקה עוצרת נשימה',
+        tagColor: 'bg-amber-100 text-amber-800',
+        shortDesc: 'עיר מבצר ביזנטית חבויה לחלוטין על גב אי-סלע ענק המחובר ליבשה בגשר צר.',
+        fullDesc: 'המכונה "גיברלטר של יוון". עיר ימי-ביניימית מבוצרת שאין בה כניסה לרכבים. סמטאות אבן מרוצפות, קמרונות עתיקים, כנסיות עם צלבי אבן, בתי קפה בוטיקיים ומלונות היסטוריים המשקיפים אל המרחב הפתוח של הים האגאי.',
+        insiderTip: 'טפסו עד לעיר העליונה (Ano Poli) ולכנסיית Agia Sofia. הנוף מלמעלה יפיל אתכם מהרגליים. בשעות הערב, העיר מוארת בפנסי אבן עמומים באווירה קסומה.',
+        coordinates: '36.6875° N, 23.0561° E',
+        bestSeason: 'כל השנה (מושלם באביב וסתיו)',
+        tags: ['עיר ימי ביניים', 'ללא רכבים', 'רומנטי', 'היסטוריה']
+      },
+      {
+        id: 'lousios',
+        title: 'קניון לוסיאוס ומנזרי הצוקים (Lousios Gorge)',
+        greekTitle: 'Φαράγγι Λούσιου',
+        category: 'rivers',
+        region: 'center',
+        regionName: 'ארקדיה ההררית (Arcadia)',
+        korfosDist: '145 ק"מ • כ-1 שעה ו-50 דק׳',
+        korfosRoute: 'דרך כביש A7 מטריפולי מערבה אל עבר כפרי האבן דימיטסנה וסטמניצה',
+        badge: 'טרק חלומי',
+        tagColor: 'bg-emerald-100 text-emerald-800',
+        shortDesc: 'נחל שוצף עם צמחיית יער פראית, גשרי אבן עתיקים ומנזרים מרהיבים התלויים על פי תהום.',
+        fullDesc: 'ערוץ נחל עמוק בלב הרי ארקדיה. האטרקציה המרכזית היא מנזר פרודרומוס (Prodromou Monastery) שנראה כאילו גולף מתוך צלע הסלע התלולה. הנזירים במקום מקבלים את פני הצועדים עם מים צוננים, קפה יווני ורחת לוקום.',
+        insiderTip: 'צאו למסלול ממוזיאון המים הפתוח שליד דימיטסנה (Open-Air Water Museum) ורדו אל הנחל. אם אתם אוהבי אדרנלין – בעונות האביב מתקיים כאן רפטינג נהדר.',
+        coordinates: '37.5878° N, 22.0433° E',
+        bestSeason: 'אפריל עד נובמבר',
+        tags: ['מנזרים תלויים', 'הליכה בטבע', 'רפטינג', 'יערות הרים']
+      },
+      {
+        id: 'kyparissi',
+        title: 'קיפאריסי – הפיורד המבודד (Kyparissi)',
+        greekTitle: 'Κυπαρίσσι',
+        category: 'hidden',
+        region: 'south',
+        regionName: 'לקוניה החבויה (Laconia)',
+        korfosDist: '210 ק"מ • כ-3.5 שעות (כביש הררי)',
+        korfosRoute: 'ירידה דרומה דרך לאונידיו או ספרטה וכביש צוקים מרהיב אל המפרץ',
+        badge: 'פינה סודית נדירה',
+        tagColor: 'bg-purple-100 text-purple-800',
+        shortDesc: 'כפר חוף מבודד שנחבא בין מצוקי ענק לים, שהיה מנותק מכבישים עד שנות ה-70.',
+        fullDesc: 'המקום שבו הזמן עצר מלכת. קיפאריסי שוכנת בתוך מפרץ דרמטי מוקף קירות סלע אנכיים של הר פרנון הנופלים ישר אל המים הצלולים. אין כאן מועדונים או רעש – רק שלוות נפש, חופי חלוקים לבנים וטברנות דייגים מקומיות אמיתיות.',
+        insiderTip: 'הכביש המוביל לכפר נחצב בתוך הצוקים ונחשב לאחת מנסיעות הנוף היפות ביותר באירופה כולה. מתאים למי שרוצה לברוח לחלוטין מהעולם המודרני.',
+        coordinates: '36.9744° N, 22.9881° E',
+        bestSeason: 'יוני עד אוקטובר',
+        tags: ['מבודד', 'שקט מוחלט', 'צוקים דרמטיים', 'חופי קריסטל']
+      },
+      {
+        id: 'elafonisos',
+        title: 'חוף סימוס באי אלפוניסוס (Simos Beach, Elafonisos)',
+        greekTitle: 'Σίμος Ελαφόνησος',
+        category: 'beaches',
+        region: 'south',
+        regionName: 'קצה לקוניה (Laconia)',
+        korfosDist: '265 ק"מ • כ-3 שעות ו-40 דק׳ + מעבורת (9 דק׳)',
+        korfosRoute: 'נסיעה דרומה דרך ספרטה ומונמבסיה עד נמל פונטה (Pounta)',
+        badge: 'המלדיביים של יוון',
+        tagColor: 'bg-sky-100 text-sky-800',
+        shortDesc: 'לשון חול לבנה כפולה עם דיונות חול נדירות ומי טורקיז פסיכדליים בצלילותם.',
+        fullDesc: 'אי קטן בדרום מזרח הפלופונז (הגעה במעבורת קצרה של 9 דקות מנמל Pounta). חוף סימוס מורכב משני מפרצים מנוגדים הנפגשים ברצועת חול דקיקה. המים כל כך שקופים שנראה כאילו הסירות מרחפות באוויר.',
+        insiderTip: 'ביולי-אוגוסט יש עומס, אך בסוף מאי, יוני או ספטמבר תרגישו שם כאילו הגעתם לאי בודד באוקיינוס השקט.',
+        coordinates: '36.4717° N, 22.9733° E',
+        bestSeason: 'יוני עד אוקטובר',
+        tags: ['מי קריסטל', 'דיונות חול', 'מעבורת קצרה', 'שחייה']
+      },
+      {
+        id: 'vathia',
+        title: 'ואת\'יה – כפר מגדלי הרפאים (Vathia)',
+        greekTitle: 'Βάθεια',
+        category: 'hidden',
+        region: 'south',
+        regionName: 'דרום חבל מאני (Deep Mani)',
+        korfosDist: '255 ק"מ • כ-3.5 שעות',
+        korfosRoute: 'דרך כביש A7 לספרטה, משם דרך גיטיאו ואראופולי עד לקצה הדרומי של מאני',
+        badge: 'ארכיטקטורה מכושפת',
+        tagColor: 'bg-purple-100 text-purple-800',
+        shortDesc: 'אשכול מגדלי מלחמה מאבן מהמאה ה-18 הניצבים על ראש גבעה שצופה אל הים הפתוח.',
+        fullDesc: 'בחבל מאני הדרומי התנהלו סכסוכי דמים (וונדטה) בין משפחות במשך מאות שנים. כל משפחה בנתה לעצמה מגדל אבן מבוצר גבוה עם חרכי ירי. ואת\'יה הוא הכפר השמור והמרשים מכולם – מראה בלתי נשכח המזכיר תפאורה של משחקי הכס.',
+        insiderTip: 'המשיכו מהכפר עוד כ-10 דקות נסיעה דרומה עד לכף מטאפאן (Cape Matapan) – הנקודה הדרומית ביותר ביבשת אירופה, שם לפי האגדה שוכן השער לעולם השאול (Hades).',
+        coordinates: '36.4533° N, 22.4667° E',
+        bestSeason: 'כל השנה (במיוחד אביב וסתיו)',
+        tags: ['מגדלי אבן', 'היסטוריה פראית', 'שער השאול', 'צילום']
+      },
+      {
+        id: 'planitero',
+        title: 'יער מעיינות פלאניטרו (Planitero)',
+        greekTitle: 'Πλανητέρο',
+        category: 'rivers',
+        region: 'north',
+        regionName: 'אכאיה ההררית (Achaea)',
+        korfosDist: '130 ק"מ • כ-1 שעה ו-50 דק׳',
+        korfosRoute: 'נסיעה לאורך מפרץ קורינתוס (A8) ועליה דרך דיאקופטו או קלבריטה',
+        badge: 'פורל טרי ומים זכים',
+        tagColor: 'bg-emerald-100 text-emerald-800',
+        shortDesc: 'יער עצי דולב עתיקים שמתחתיהם נובעים מעיינות נהר ארואניוס וטברנות דגי פורל.',
+        fullDesc: 'נווה מדבר ירוק ומים מפכים בכל עבר. שורשי העצים הענקיים שקועים במים הזורמים. האטרקציה הקולינרית פה היא טברנות הדגים המקומיות, שמחזיקות בריכות פורל טבעיות ומגישות את הדג על המקום ברוטב שקדים, פטריות הרים או חמאה לימונית.',
+        insiderTip: 'שלבו את הביקור עם נסיעה ברכבת השיניים ההיסטורית של קלבריטה (Odontotos Cog Railway) החוצה את ערוץ ווראיקוס.',
+        coordinates: '37.9333° N, 22.1667° E',
+        bestSeason: 'כל השנה (בקיץ צל נפלא, בסתיו שלכת זהובה)',
+        tags: ['מעיינות', 'פורל טרי', 'יער עצי דולב', 'קרירות']
+      },
+      {
+        id: 'kardamyli',
+        title: 'קרדמילי – הבוהו-שיק של מאני (Kardamyli)',
+        greekTitle: 'Καρδαμύλη',
+        category: 'villages',
+        region: 'south',
+        regionName: 'מסיניאן מאני (Mani)',
+        korfosDist: '205 ק"מ • כ-2.5 שעות',
+        korfosRoute: 'נסיעה מהירה בכביש A7 לקלמטה ומשם 35 דקות בנסיעת חוף מרהיבה לקרדמילי',
+        badge: 'קסם בוהמייני',
+        tagColor: 'bg-indigo-100 text-indigo-800',
+        shortDesc: 'כפר ציורי למרגלות הר טייגטוס, מוקף מטעי זיתים וחופי חלוקים שקטים עם אווירה תרבותית.',
+        fullDesc: 'המקום שבו בחר לחיות הסופר הבריטי האגדי פטריק לי פרמור. קרדמילי משלבת עיירת אבן מסורתית עם בוטיקים מעוצבים, מסעדות גורמה מקומיות וברים קסומים על קו המים (כמו חוף Ritsa וחוף Foneas הסמוך עם סלע הענק באמצע המפרץ).',
+        insiderTip: 'בקרו בבית פטריק לי פרמור המשומר (שלוחה של מוזיאון בנאקי) – אחד הבתים היפים ביוון עם פטיו המשקיף אל הים.',
+        coordinates: '36.8833° N, 22.2333° E',
+        bestSeason: 'מאי עד אוקטובר',
+        tags: ['בוהו-שיק', 'מטעי זיתים', 'שחייה', 'קולינריה איכותית']
+      },
+      {
+        id: 'nafplio',
+        title: 'נאפפליו – העיר הרומנטית ביוון (Nafplio)',
+        greekTitle: 'Ναύπλιο',
+        category: 'villages',
+        region: 'east',
+        regionName: 'ארגוליס (Argolis)',
+        korfosDist: '62 ק"מ • כ-55 דקות נסיעה 🚗',
+        korfosRoute: 'נסיעה מקורפוס מערבה דרך ליגוריו (ליד תיאטרון אפידאורוס) ישר לנאפפליו',
+        badge: 'שכנים קרובים • 55 דק׳',
+        tagColor: 'bg-indigo-100 text-indigo-800',
+        shortDesc: 'הבירה הראשונה של יוון המודרנית – אדריכלות ונציאנית, בוגנוויליות וטיילת ימית קסומה.',
+        fullDesc: 'פנינה אמיתית במרחק קצר מאוד מקורפוס. מעל העיר חולש מבצר פלמידי המלכותי, ובמרכז המפרץ צף מבצר בורצי. סמטאות העיר העתיקה מרוצפות שיש ומלאות בחנויות בוטיק, גלידריות איטלקיות אותנטיות וטברנות מסורתיות שוקקות חיים.',
+        insiderTip: 'אל תוותרו על הליכה לאורך טיילת ארבניטיה (Arvanitia Promenade) המחבקת את צוקי המבצר מעל הים בשקיעה.',
+        coordinates: '37.5667° N, 22.8000° E',
+        bestSeason: 'כל השנה (מדהים גם בחורף ובחגי האביב)',
+        tags: ['סמטאות שיש', 'מבצרים', 'גלידה איטלקית', 'רומנטיקה']
+      },
+      {
+        id: 'gerolimenas',
+        title: 'גרוֹלימנאס – נמל הסלע העתיק (Gerolimenas)',
+        greekTitle: 'Γερολιμένας',
+        category: 'hidden',
+        region: 'south',
+        regionName: 'חבל מאני הפראי',
+        korfosDist: '245 ק"מ • כ-3 שעות ו-20 דק׳',
+        korfosRoute: 'דרך כביש A7 לספרטה, מעבר דרך אראופולי ונסיעה לאורך החוף המערבי של מאני',
+        badge: 'שקט ורוגע עמוק',
+        tagColor: 'bg-purple-100 text-purple-800',
+        shortDesc: 'כפר דייגים קטן מוקף צוק תלול דמוי כף יד של ענק הנופל הישר אל מי הים הצלולים.',
+        fullDesc: 'בעבר שימש כנמל מוגן לספינות סוחר ואף פיראטים. כיום זהו כפר שקט במיוחד עם מספר מלונות בוטיק ייחודיים באבן עתיקה, טברנות דגים על קו החוף ומים שקטים בצבע טורקיז כהה.',
+        insiderTip: 'במלון Kyrimai ההיסטורי יש מסעדת שף משובחת הנחשבת לאחת הטובות ביותר בדרום יוון. מומלץ מאוד לארוחת ערב חגיגית מול הגלים.',
+        coordinates: '36.4833° N, 22.3992° E',
+        bestSeason: 'יוני עד אוקטובר',
+        tags: ['מלון בוטיק', 'נמל מבודד', 'דגים טריים', 'צוקים']
+      },
+      {
+        id: 'lake-doxa',
+        title: 'אגם דוקסה – האלפים השוויצריים של יוון (Lake Doxa)',
+        greekTitle: 'Λίμνη Δόξα',
+        category: 'rivers',
+        region: 'north',
+        regionName: 'קורינתיה ההררית (Corinthia)',
+        korfosDist: '125 ק"מ • כ-1 שעה ו-50 דק׳',
+        korfosRoute: 'נסיעה לכיוון קיאטו (Kiato) ומשם עלייה יפהפייה דרך אגם סטימפליה להרים',
+        badge: 'באותו מחוז • 1:50 שעות',
+        tagColor: 'bg-emerald-100 text-emerald-800',
+        shortDesc: 'אגם הררי מרהיב מוקף יערות אורנים ופסגות מושלגות עם כנסייה קטנה על לשון יבשה.',
+        fullDesc: 'אגם מלאכותי הממוקם בגובה 900 מטר מעל פני הים. המים הצלולים משקפים את עצי האורן והאלון מסביב, ובמרכזו רצועת אדמה דקה המובילה לכנסיית Agios Fanourios הציורית. במעלה ההר שוכן מנזר Agios Georgios שבו מכינים ריבת עלי ורדים מתוקה.',
+        insiderTip: 'מקום מושלם לפיקניק, הליכה סביב האגם, שייט בסאפ/קיאק או רכיבה על סוסים. באביב ובסתיו הצבעים כאן מהפנטים.',
+        coordinates: '37.9317° N, 22.2858° E',
+        bestSeason: 'אביב, סתיו וחורף',
+        tags: ['אגם הררי', 'יער אורנים', 'פיקניק', 'רגיעה']
+      },
+      {
+        id: 'kastanitsa-forest',
+        title: 'קסטניצה ויער הערמונים (Kastanitsa Chestnut Forest)',
+        greekTitle: 'Καστάνιτσα',
+        category: 'foliage',
+        region: 'south',
+        regionName: 'רכס פרנון, ארקדיה (Mount Parnon)',
+        korfosDist: '130 ק"מ • כ-2 שעות נסיעה',
+        korfosRoute: 'דרך נאפפליו ואסטרוס (Paralio Astros) ומשם עליה מפותלת לרכס פרנון',
+        badge: 'בירת השלכת של יוון',
+        tagColor: 'bg-amber-100 text-amber-900',
+        shortDesc: 'כפר אבן צבוע לבן ועץ, מוקף ביער עצי ערמון ענק בן 4,000 דונם שהופך לכתום בוער בסתיו.',
+        fullDesc: 'קסטניצה הוא אחד הכפרים העתיקים והיפים ביוון (תושביו עדיין דוברים את הדיאלקט הצקוני העתיק של ספרטה). בסתיו, היער המקיף את הכפר בוער בצבעי אוקר, נחושת וזהב. בסוף השבוע האחרון של אוקטובר נחגג פה פסטיבל הערמונים עם תבשילי ערמונים מסורתיים, עוגות מתוקות, מוזיקה כפרית ויין חם.',
+        insiderTip: 'טפסו אל מגדל קפנטזאקיס (Kafantzakis Tower) בראש הכפר לתצפית 360 מעלות על שטיחי השלכת של רכס פרנון. אם תגיעו בסוף אוקטובר, הזמינו לינה חודשים מראש!',
+        coordinates: '37.2625° N, 22.6508° E',
+        bestSeason: 'אמצע אוקטובר עד סוף נובמבר',
+        tags: ['שלכת בוערת', 'יער ערמונים', 'פסטיבל ערמונים', 'כפר אבן מסורתי']
+      },
+      {
+        id: 'vytina-love-road',
+        title: 'שדרת האהבה בויטינה (Vytina & Love Trail)',
+        greekTitle: 'Βυτίνα - Δρόμος της Αγάπης',
+        category: 'foliage',
+        region: 'center',
+        regionName: 'הרי מנאלון, ארקדיה (Menalon)',
+        korfosDist: '135 ק"מ • כ-1 שעה ו-40 דק׳',
+        korfosRoute: 'נסיעה מהירה דרך A7 עד טריפולי ועליה בכביש יפהפה לויטינה',
+        badge: 'רומנטיקה ושלכת זהב',
+        tagColor: 'bg-amber-100 text-amber-900',
+        shortDesc: 'מנהרת שלכת זהובה עשויה עצי דולב ומייפל עתיקים, שזכתה לכינוי "שביל האהבה" הרומנטי.',
+        fullDesc: 'עיירת ההרים ויטינה ממוקמת בגובה 1,033 מטרים בלב יערות אורנים ודולב. בקצה העיירה נמצאת "שדרת האהבה" (Dromos tis Agapis) שבה נהגו זוגות צעירים לטייל בעבר כדי להכיר. בסתיו, עלי הדולב והמייפל נושרים ויוצרים מנהרה זהובה עוצרת נשימה. מכאן יוצאים גם מקטעים מרהיבים של ה-Menalon Trail (אחד מטרקי ההליכה המובילים באירופה).',
+        insiderTip: 'עצרו בבית קפה מקומי לכוס תה הרים חם עם דבש אשוח נדיר (Elatis Menalou) - הדבש היחיד ביוון שמוגן במעמד PDO.',
+        coordinates: '37.6667° N, 22.1833° E',
+        bestSeason: 'אוקטובר עד אמצע דצמבר',
+        tags: ['שביל האהבה', 'עצי מייפל ודולב', 'טרק מנאלון', 'דבש הרים']
+      },
+      {
+        id: 'lake-tsivlou',
+        title: 'אגם ציבלו בשלכת (Lake Tsivlou)',
+        greekTitle: 'Λίμνη Τσιβλού',
+        category: 'foliage',
+        region: 'north',
+        regionName: 'רכס חלמוס (Mount Chelmos)',
+        korfosDist: '115 ק"מ • כ-1 שעה ו-40 דק׳',
+        korfosRoute: 'דרך כביש A8 לאורך המפרץ עד אקראטה (Akrata) ועליה לעמק נהר קרתיס',
+        badge: 'אלפיני וקסום',
+        tagColor: 'bg-amber-100 text-amber-900',
+        shortDesc: 'אגם הררי פראי וצלול בגובה 800 מטר, מוקף יער עצי דולב ואורן שמשתקפים במי הטורקיז.',
+        fullDesc: 'אגם טבעי שנוצר בשנת 1913 בעקבות מפולת סלעים שחסמה את נהר קרתיס. בתוך מימי האגם עדיין ניתן לראות גזעי עצים שקועים. באוקטובר ובנובמבר, צמרות עצי הדולב והאלון סביב האגם מצהיבות ומזהיבות, וההשתקפות במי הטורקיז השקטים נראית כמו ציור שמן אימפרסיוניסטי.',
+        insiderTip: 'הביאו מחצלת ותרמוס קפה לפיקניק שקט על גדת האגם. לאחר מכן, עלו לארוחת צהריים בכפר הסמוך זארוחלה (Zarouchla) הידוע בבתי האבן ובבשרים על האש.',
+        coordinates: '38.0700° N, 22.2350° E',
+        bestSeason: 'סוף אוקטובר עד סוף נובמבר',
+        tags: ['השתקפות מושלמת', 'עצי דולב מוזהבים', 'פיקניק סתווי', 'אגם נסתר']
+      },
+      {
+        id: 'vouraikos-autumn-train',
+        title: 'רכבת קניון ווראיקוס בסתיו (Vouraikos Gorge Cog Railway)',
+        greekTitle: 'Οδοντωτός Βουραϊκού',
+        category: 'foliage',
+        region: 'north',
+        regionName: 'קניון ווראיקוס, אכאיה (Achaea)',
+        korfosDist: '100 ק"מ (לדיאקופטו) • כ-1 שעה ו-15 דק׳ 🚗',
+        korfosRoute: 'נסיעה מהירה דרך A8 לאורך החוף עד תחנת הרכבת בדיאקופטו (Diakopto)',
+        badge: 'טיול יום קליל • 1:15 שעות',
+        tagColor: 'bg-amber-100 text-amber-900',
+        shortDesc: 'מסילת שיניים היסטורית החוצה קניון צר, מפלי מים ומנהרות תחת גג שלכת זהוב.',
+        fullDesc: 'רכבת ה-Odontotos נבנתה בשנת 1895 ונוסעת מדיאקופטו (חוף הים) אל קלבריטה שבראש ההר. המסלול עובר בצמוד לנחל שוצף, חוצה גשרי אבן וצוקים דרמטיים. בסתיו, קרקעית הקניון מלאה בעצי דולב ענקיים שעליהם הופכים לכתומים ונושרים אל תוך מסילת הרכבת והנחל.',
+        insiderTip: 'שבו בצד ימין בעלייה (או צד שמאל בירידה) לתצפית הטובה ביותר על המפלים ועצי השלכת. כדאי להזמין כרטיסים באתר Hellenic Train מראש לסופי שבוע בסתיו!',
+        coordinates: '38.1167° N, 22.2000° E',
+        bestSeason: 'אמצע אוקטובר עד דצמבר',
+        tags: ['רכבת היסטורית', 'קניון עמוק', 'צילום שלכת', 'חוויה משפחתית']
+      },
+      {
+        id: 'trikala-korinthias',
+        title: 'טריקלה קורינתיאס ועמק פלאמבוריצה (Trikala Korinthias)',
+        greekTitle: 'Τρίκαλα Κορινθίας',
+        category: 'foliage',
+        region: 'north',
+        regionName: 'קורינתיה ההררית, הר זירייה (Mount Zireia)',
+        korfosDist: '95 ק"מ • כ-1 שעה ו-25 דק׳ (הכי קרוב לבית!) 🚗🍂',
+        korfosRoute: 'נסיעה מהירה מערבה על A8 עד יציאת קסילוקסטרו (Xylokastro) ועליה ישירה להר זירייה',
+        badge: 'הכי קרוב לקורפוס • 1:25 ש׳',
+        tagColor: 'bg-amber-200 text-amber-950 font-black border border-amber-300',
+        shortDesc: 'היעד הקרוב והמרשים ביותר לקורפוס! שלושה כפרי אבן תחת עצי דולב ענקיים ועמק יערות אלפיני מוזהב.',
+        fullDesc: 'במרחק של שעה ו-25 דקות בלבד מפתח הבית בקורפוס, אתם מגיעים לגובה של 1,100 מטרים אל פנינת ההרים של המחוז שלכם. טריקלה מחולקת לשלושה מפלסים (קאטו, מסאיה ואנו טריקלה). באוקטובר ונובמבר, הכיכרות המרכזיות מתכסות בשטיח זהב של עלי דולב, ריח עצי ההסקה ממלא את האוויר, ובבתי הקפה מגישים תה הרים עם דבש אשוח מקומי. מעל הכפר מתפתל עמק פלאמבוריצה (Flambouritsa Valley) – שמורת טבע מוזהבת וקסומה.',
+        insiderTip: 'הזמינו ארוחת צהריים בטברנה מסורתית בכיכר קאטו טריקלה מתחת לעצי הדולב העתיקים (נסו את תבשילי הקדרת בקר והפשטידות הכפריות). לאחר מכן המשיכו כ-15 דקות נסיעה לאגם דסיו (Lake Dasios) החבוי בתוך יער אורנים שחורים ושלכת מופלאה.',
+        lodgingInfo: {
+          tiersDesc: 'טריקלה פרוסה על 3 גבהים לאורך צלע ההר (קאטו = תחתון, מסי = אמצעי, אנו = עליון). לכל חלק אופי שונה:',
+          areas: [
+            {
+              tier: 'קאטו טריקלה (Kato - גובה 900 מ׳) • שקט ויוקרה',
+              desc: 'החלק הכפרי והשליו ביותר. מרוכז סביב כיכר אבן עתיקה עם עצי דולב בני מאות שנים וטברנות מסורתיות. כאן שוכנים גם שני ריזורטי הספא היוקרתיים ביותר באזור.',
+              recommendations: [
+                '⭐ Pliadon Gi Mountain Resort & Spa (Πλειάδων Γη): ריזורט הספא היוקרתי והנחשב ביותר בכל הפלופונז ההררי. סוויטות אבן ועץ פרטיות, אח מבוערת, בריכה מקורה מחוממת ומסעדת גורמה.',
+                '🌲 Hyades Mountain Resort: מתחם בקתות שאלט פיניות מעץ ואבן בלב בוסתן צמחי מרפא ועצי פרי, עם נוף פנורמי מרהיב למפרץ קורינתוס.'
+              ]
+            },
+            {
+              tier: 'מסי טריקלה (Mesi - גובה 1,000 מ׳) • לב העניינים',
+              desc: 'המרכז השוקק של האזור – הכי הרבה בתי קפה מעוצבים, חנויות של דבש אשוח ומעדנים כפריים, טברנות תוססות ונוף פתוח. אידיאלי למי שרוצה לצאת ברגל בערב בלי להזיז את הרכב.',
+              recommendations: [
+                '🔥 Mysaion Hotel: מלון בוטיק מסורתי עשוי אבן מקומית עם ארוחות בוקר כפריות מפורסמות ונוף לעמק.',
+                '🛋️ Guesthouse Diochri: גסטהאוס רומנטי ומעוצב לזוגות, קמינים חמימים ומיטות Cocomat יוקרתיות.'
+              ]
+            },
+            {
+              tier: 'אנו טריקלה (Ano - גובה 1,100 מ׳) • אלפיני ומבודד',
+              desc: 'השכונה הגבוהה ביותר, הקרובה ביותר ליער פלאמבוריצה, לשבילי ההליכה ולמרכז הסקי זירייה. אוויר הרים צלול, שקט מוחלט ורומנטיקה מושלגת בחורף.',
+              recommendations: [
+                '👑 Archontiko Fiamegou Hotel & Spa: בית אחוזה היסטורי (Archontiko) שהוסב למלון ספא חלומי עם סאונה, עיצוב עץ כפרי וחמימות יוצאת דופן.'
+              ]
+            }
+          ]
+        },
+        coordinates: '37.9944° N, 22.4544° E',
+        bestSeason: 'אמצע אוקטובר עד סוף נובמבר',
+        tags: ['הכי קרוב לבית', 'כיכר דולב מוזהבת', 'שמורת טבע', 'טברנות בשרים']
+      },
+      {
+        id: 'kastania-feneos',
+        title: 'כפר הערמונים קסטניה ועמק פנאוס (Kastania & Feneos)',
+        greekTitle: 'Καστανιά Κορινθίας',
+        category: 'foliage',
+        region: 'north',
+        regionName: 'קורינתיה ההררית (Feneos Valley)',
+        korfosDist: '118 ק"מ • כ-1 שעה ו-35 דק׳ 🚗',
+        korfosRoute: 'חיבור ל-A8 לכיוון קיאטו (Kiato) ועליה נופית דרך עמק סטימפליה',
+        badge: 'יער ערמונים קרוב • 1:35 ש׳',
+        tagColor: 'bg-amber-100 text-amber-900',
+        shortDesc: 'כפר ציורי שנקרא על שם יערות הערמונים והאגוזים העתיקים שמקיפים אותו ובוערים בנחושת וזהב בסתיו.',
+        fullDesc: 'קסטניה שוכנת בגובה 920 מטר על מורדות הר זירייה, כשהיא טובלת כולה ביערות של עצי ערמון, אגוז ואלון. בסתיו, הדרך המתפתלת מסטימפליה אל קסטניה ואל עמק פנאוס נראית כמו מנהרת צבעים. תושבי המקום מלקטים ערמונים ופטריות יער, והטברנות המקומיות מציעות תבשילי ערמונים צלויים ובשר ביין אדום מנמאה הסמוכה.',
+        insiderTip: 'שלבו את קסטניה עם המשך קצרצר של 15 דקות אל אגם דוקסה (Lake Doxa). קנו שקית ערמונים טריים שנקטפו באותו בוקר מהמקומיים בצידי הדרך!',
+        coordinates: '37.8683° N, 22.3814° E',
+        bestSeason: 'אוקטובר עד אמצע נובמבר',
+        tags: ['יער ערמונים', 'עצי אגוז', 'ליקוט פטריות', 'קרוב לבית']
+      }
+    ];
+
+    // Seasonal Detailed Data
+      },
+      winter: {
+        title: 'חורף (דצמבר - מרץ): כפרי אבן רומנטיים, אח מבוערת וסקי בהרים',
+        badge: 'חוויה יוונית לא צפויה – הרים ואותנטיות חמימה',
+        icon: '❄️',
+        highlights: [
+          'כפרי האבן של ארקדיה (דימיטסנה, סטמניצה) הופכים לגלויה אירופאית מושלגת עם בתי מלון כפריים מפנקים ואש באח.',
+          'אתר הסקי קלבריטה (Kalavryta Ski Resort) על הר חלמוס – סקי אמיתי במרחק שעתיים וחצי מנמל התעופה!',
+          'אוכל חורפי מנחם: נזידי בשר ביין אדום, מרקי שעועית (Fasolada) ופשטידות גבינה ביתיות.',
+          'ערים כמו נאפפליו שקטות, רומנטיות ומציעות אווירה מקומית אותנטית ללא תיירים זרים.'
+        ],
+        recommendation: 'המלצת זהב: השכירו בקתת אבן עם אח בוערת בכפר דימיטסנה, ותיהנו מיוון חורפית, שלווה וקסומה שלא היכרתם.'
+      }
+    };
+
+    // State management
+    let currentFilter = 'all';
+    let searchQuery = '';
+    let favorites = JSON.parse(localStorage.getItem('peloponnese_favs') || '[]');
+
+    function updateFavCount() {
+      const countEl = document.getElementById('favCount');
+      if (countEl) countEl.innerText = favorites.length;
+    }
+
+    function toggleFavorite(id, event) {
+      if (event) event.stopPropagation();
+      const index = favorites.indexOf(id);
+      if (index === -1) {
+        favorites.push(id);
+      } else {
+        favorites.splice(index, 1);
+      }
+      localStorage.setItem('peloponnese_favs', JSON.stringify(favorites));
+      updateFavCount();
+      renderCards();
+      renderFavoritesList();
+    }
+
+    function isFav(id) {
+      return favorites.includes(id);
+    }
+
+    function renderCards() {
+      const grid = document.getElementById('placesGrid');
+      const noResults = document.getElementById('noResults');
+      const itemCount = document.getElementById('itemCount');
+
+      const filtered = placesData.filter(place => {
+        const matchesCategory = (currentFilter === 'all') || (place.category === currentFilter);
+        const matchesSearch = searchQuery === '' || 
+          place.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          place.regionName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          place.fullDesc.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          place.korfosDist.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          place.tags.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
+        
+        return matchesCategory && matchesSearch;
+      });
+
+      itemCount.innerText = filtered.length;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        noResults.classList.remove('hidden');
+        return;
+      }
+
+      noResults.classList.add('hidden');
+
+      grid.innerHTML = filtered.map(place => {
+        const favActive = isFav(place.id);
+        return `
+          <div onclick="openModal('${place.id}')" class="bg-white rounded-3xl overflow-hidden border border-sand-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between cursor-pointer group">
+            
+            <div class="p-6 sm:p-7">
+              <!-- Top Row: Badge & Favorite -->
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="badge-pill ${place.tagColor}">
+                  ${place.badge}
+                </span>
+                
+                <button onclick="toggleFavorite('${place.id}', event)" class="p-2 rounded-full hover:bg-gray-100 transition text-gray-400 hover:text-red-500">
+                  <svg class="w-5 h-5 ${favActive ? 'text-red-500 fill-current' : 'fill-none stroke-current'}" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Distance From Korfos Pill (Prominent) -->
+              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs font-bold mb-3">
+                <span>🏡 מהבית בקורפוס:</span>
+                <span class="text-amber-800">${place.korfosDist}</span>
+              </div>
+
+              <!-- Region and Greek Subtitle -->
+              <div class="text-xs font-semibold text-olive-700 mb-1 flex items-center justify-between">
+                <span>📍 ${place.regionName}</span>
+                <span class="text-gray-400 font-normal italic">${place.greekTitle}</span>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-black text-aegean-950 group-hover:text-aegean-600 transition mb-3">
+                ${place.title}
+              </h3>
+
+              <!-- Short Description -->
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                ${place.shortDesc}
+              </p>
+
+              <!-- Tags -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                ${place.tags.map(t => `<span class="text-[11px] font-medium bg-sand-100 text-gray-700 px-2.5 py-1 rounded-lg">#${t}</span>`).join('')}
+              </div>
+            </div>
+
+            <!-- Card Bottom Bar -->
+            <div class="px-6 py-4 bg-sand-50/80 border-t border-sand-200 flex items-center justify-between text-xs font-semibold text-aegean-900">
+              <span class="flex items-center gap-1.5 text-gray-500">
+                <span>🗓️</span> ${place.bestSeason}
+              </span>
+              <span class="flex items-center gap-1 text-aegean-700 group-hover:translate-x-[-3px] transition font-bold">
+                פרטים וניווט מהבית ←
+              </span>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    function setFilter(cat) {
+      currentFilter = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.getAttribute('data-cat') === cat) {
+          btn.className = 'cat-btn px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-aegean-900 text-white shadow-sm';
+        } else {
+          btn.className = 'cat-btn px-5 py-2.5 rounded-full text-sm font-semibold transition whitespace-nowrap bg-white text-gray-700 hover:bg-sand-100 border border-sand-300';
+        }
+      });
+      renderCards();
+    }
+
+    function handleSearch() {
+      searchQuery = document.getElementById('searchInput').value.trim();
+      renderCards();
+    }
+
+    function searchFor(keyword) {
+      const input = document.getElementById('searchInput');
+      input.value = keyword;
+      searchQuery = keyword;
+      setFilter('all');
+      renderCards();
+      scrollToGrid();
+    }
+
+    function resetSearch() {
+      document.getElementById('searchInput').value = '';
+      searchQuery = '';
+      setFilter('all');
+    }
+
+    function scrollToGrid() {
+      const el = document.getElementById('discover');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function filterItineraryByRegion(reg) {
+      resetSearch();
+      const grid = document.getElementById('placesGrid');
+      const filtered = placesData.filter(p => p.region === reg);
+      document.getElementById('itemCount').innerText = filtered.length;
+      
+      grid.innerHTML = filtered.map(place => {
+        return `
+          <div onclick="openModal('${place.id}')" class="bg-white rounded-3xl p-6 border border-amber-300 shadow-lg cursor-pointer">
+            <span class="badge-pill bg-amber-100 text-amber-900 mb-2">מסלול נבחר</span>
+            <h3 class="text-xl font-bold text-aegean-950 mb-2">${place.title}</h3>
+            <p class="text-xs text-gray-600 mb-4">${place.shortDesc}</p>
+            <span class="text-xs font-bold text-aegean-700">קרא פרטים מלאים ←</span>
+          </div>
+        `;
+      }).join('');
+
+      scrollToGrid();
+    }
+
+    function switchSeason(seasonKey) {
+      const data = seasonalData[seasonKey];
+      if (!data) return;
+
+      document.querySelectorAll('.season-btn').forEach(btn => {
+        btn.className = 'season-btn px-6 py-3 rounded-2xl font-bold text-sm transition bg-white text-gray-700 hover:bg-sand-100 border border-sand-300';
+      });
+
+      const activeBtn = document.getElementById(`btn-${seasonKey}`);
+      if (activeBtn) {
+        let colorClass = 'bg-aegean-800 text-white shadow-md';
+        if (seasonKey === 'spring') colorClass = 'bg-emerald-600 text-white shadow-md';
+        if (seasonKey === 'summer') colorClass = 'bg-amber-500 text-white shadow-md';
+        if (seasonKey === 'autumn') colorClass = 'bg-terracotta-500 text-white shadow-md';
+        if (seasonKey === 'winter') colorClass = 'bg-slate-700 text-white shadow-md';
+        activeBtn.className = `season-btn ${colorClass} px-6 py-3 rounded-2xl font-bold text-sm transition`;
+      }
+
+      const container = document.getElementById('seasonContent');
+      container.innerHTML = `
+        <div class="space-y-6 animate-in fade-in duration-300">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-sand-200 pb-6">
+            <div>
+              <span class="text-3xl ml-2">${data.icon}</span>
+              <h3 class="text-2xl sm:text-3xl font-black text-aegean-950 inline-block align-middle">${data.title}</h3>
+            </div>
+            <span class="inline-block px-3 py-1.5 rounded-full bg-sand-200 text-gray-800 text-xs font-bold self-start sm:self-auto">
+              ${data.badge}
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+            ${data.highlights.map(h => `
+              <div class="flex items-start gap-3 bg-sand-50 p-4 rounded-2xl border border-sand-200">
+                <span class="text-emerald-600 font-bold text-lg">✓</span>
+                <span class="text-sm text-gray-700 leading-relaxed font-medium">${h}</span>
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="mt-6 p-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-950 text-sm font-semibold flex items-center gap-3">
+            <span class="text-xl">⭐</span>
+            <span>${data.recommendation}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function openModal(id) {
+      const place = placesData.find(p => p.id === id);
+      if (!place) return;
+
+      const modal = document.getElementById('placeModal');
+      const content = document.getElementById('modalContent');
+      const fav = isFav(place.id);
+      const googleMapsNavUrl = `https://www.google.com/maps/dir/?api=1&origin=Korfos,+Greece&destination=${encodeURIComponent(place.title + ' ' + place.greekTitle)}`;
+
+      // Lodging HTML block if available
+      const lodgingHtml = place.lodgingInfo ? `
+        <div class="bg-gradient-to-br from-stone-900 to-amber-950 text-white rounded-2xl p-5 sm:p-6 border border-amber-400/30 space-y-4 shadow-lg">
+          <div class="flex items-center justify-between border-b border-white/10 pb-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🏨</span>
+              <h3 class="text-lg font-black text-amber-200">איפה כדאי לישון בטריקלה קורינתיאס?</h3>
+            </div>
+            <span class="text-[11px] bg-amber-400/20 text-amber-300 font-bold px-2.5 py-1 rounded-lg">מדריך הבקתות והשאלטים</span>
+          </div>
+          
+          <p class="text-xs text-amber-100/90 leading-relaxed">
+            ${place.lodgingInfo.tiersDesc}
+          </p>
+
+          <div class="space-y-4 pt-1">
+            ${place.lodgingInfo.areas.map(area => `
+              <div class="bg-black/30 p-3.5 rounded-xl border border-white/5 space-y-2">
+                <div class="text-sm font-bold text-amber-300">${area.tier}</div>
+                <p class="text-[11px] text-gray-300 leading-relaxed">${area.desc}</p>
+                <div class="space-y-1.5 pt-1">
+                  ${area.recommendations.map(rec => `
+                    <div class="text-[11px] text-amber-100 bg-white/5 p-2 rounded-lg border border-white/5 font-medium leading-relaxed">
+                      ${rec}
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="p-3 bg-amber-500/10 border border-amber-400/20 rounded-xl text-[11px] text-amber-200 font-semibold flex items-center gap-2">
+            <span>💡</span>
+            <span><strong>טיפ להזמנה:</strong> בסופי שבוע של סתיו וחורף (אוקטובר עד פברואר) המלונות מתמלאים במהירות ע"י תושבי אתונה. מומלץ להזמין 3-4 שבועות מראש.</span>
+          </div>
+        </div>
+      ` : '';
+
+      content.innerHTML = `
+        <div class="p-6 sm:p-10 space-y-6">
+          
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="badge-pill ${place.tagColor}">${place.badge}</span>
+              <span class="text-xs text-gray-500 font-medium">📍 ${place.regionName}</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black text-aegean-950">${place.title}</h2>
+            <div class="text-sm font-serif text-gray-400 italic">${place.greekTitle} • מיקום: ${place.coordinates}</div>
+          </div>
+
+          <!-- Korfos Drive Info Card & Navigation Button -->
+          <div class="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2 text-sky-950 font-bold text-sm">
+                <span>🏡</span>
+                <span>הגעה מהבית בקורפוס (Korfos):</span>
+                <span class="text-sky-700 font-black">${place.korfosDist}</span>
+              </div>
+              <p class="text-xs text-sky-900 leading-relaxed">
+                🛣️ <strong>נתיב מומלץ:</strong> ${place.korfosRoute}
+              </p>
+            </div>
+            <a href="${googleMapsNavUrl}" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-sky-700 hover:bg-sky-800 text-white rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 shadow-sm whitespace-nowrap active:scale-95">
+              <span>🗺️ נווט עכשיו מקורפוס</span>
+              <svg class="w-3.5 h-3.5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="text-gray-700 leading-relaxed text-sm sm:text-base border-t border-sand-200 pt-4">
+            ${place.fullDesc}
+          </div>
+
+          <!-- The Insider Secret Box -->
+          <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-5 space-y-2 shadow-sm">
+            <div class="flex items-center gap-2 text-amber-900 font-black text-sm">
+              <span>🤫</span> הטיפ הסודי של המקומיים (Insider Secret)
+            </div>
+            <p class="text-xs sm:text-sm text-amber-950 leading-relaxed">
+              ${place.insiderTip}
+            </p>
+          </div>
+
+          <!-- Lodging Section if available -->
+          ${lodgingHtml}
+
+          <div class="grid grid-cols-2 gap-4 text-xs bg-sand-50 p-4 rounded-2xl border border-sand-200">
+            <div>
+              <span class="font-bold text-gray-500 block mb-1">עונה אופטימלית:</span>
+              <span class="text-aegean-950 font-semibold">${place.bestSeason}</span>
+            </div>
+            <div>
+              <span class="font-bold text-gray-500 block mb-1">סגנון חוויה:</span>
+              <span class="text-aegean-950 font-semibold">${place.tags.join(' • ')}</span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-4 border-t border-sand-200">
+            <button onclick="toggleFavorite('${place.id}'); openModal('${place.id}');" class="px-5 py-2.5 rounded-xl border border-sand-300 hover:border-red-400 text-sm font-bold flex items-center gap-2 transition ${fav ? 'bg-red-50 text-red-600' : 'bg-white text-gray-700'}">
+              <span>${fav ? '❤️ שמור במועדפים' : '🤍 הוסף למועדפים'}</span>
+            </button>
+            <button onclick="closeModal()" class="px-6 py-2.5 rounded-xl bg-aegean-900 hover:bg-aegean-950 text-white font-bold text-sm transition">
+              סגור
+            </button>
+          </div>
+
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('placeModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function openFavoritesModal() {
+      renderFavoritesList();
+      const modal = document.getElementById('favoritesModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeFavoritesModal() {
+      const modal = document.getElementById('favoritesModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function renderFavoritesList() {
+      const list = document.getElementById('favoritesList');
+      if (favorites.length === 0) {
+        list.innerHTML = `
+          <div class="text-center py-10 text-gray-400 text-sm">
+            עדיין לא שמרת מקומות. לחץ על סמל הלב בכרטיס כלשהו כדי לשמור אותו לטיול שלך!
+          </div>
+        `;
+        return;
+      }
+
+      list.innerHTML = favorites.map(id => {
+        const p = placesData.find(item => item.id === id);
+        if (!p) return '';
+        return `
+          <div class="flex items-center justify-between p-3.5 rounded-2xl bg-sand-50 border border-sand-200 hover:bg-white transition">
+            <div onclick="closeFavoritesModal(); openModal('${p.id}');" class="cursor-pointer flex-1">
+              <div class="font-bold text-sm text-aegean-950">${p.title}</div>
+              <div class="text-xs text-gray-500">${p.regionName} • ${p.badge}</div>
+            </div>
+            <button onclick="toggleFavorite('${p.id}')" class="text-red-500 hover:text-red-700 p-2 text-sm font-bold">
+              ✕
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function clearAllFavorites() {
+      favorites = [];
+      localStorage.removeItem('peloponnese_favs');
+      updateFavCount();
+      renderCards();
+      renderFavoritesList();
+    }
+
+    window.onload = function() {
+      updateFavCount();
+      renderCards();
+      switchSeason('spring');
+
+      // Close modal on Escape key or backdrop click
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeModal();
+          closeFavoritesModal();
+        }
+      });
+
+      document.getElementById('placeModal').addEventListener('click', (e) => {
+        if (e.target.id === 'placeModal') closeModal();
+      });
+
+      document.getElementById('favoritesModal').addEventListener('click', (e) => {
+        if (e.target.id === 'favoritesModal') closeFavoritesModal();
+      });
+    };
+  </script>
+</body>
+</html>
