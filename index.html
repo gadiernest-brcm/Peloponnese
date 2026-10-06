@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Peloponnese">
   <meta name="theme-color" content="#ffffff">
   <title>הפלופונז הנסתר והמושלם | המדריך המלא ליוון האותנטית</title>
   
@@ -64,7 +65,16 @@
       scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
       -webkit-tap-highlight-color: transparent;
+      -webkit-text-size-adjust: 100%;
+      touch-action: manipulation;
       padding-bottom: env(safe-area-inset-bottom);
+    }
+    body.modal-open {
+      overflow: hidden;
+    }
+    .modal-scrollable {
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
     }
     .cinzel {
       font-family: 'Cinzel', serif;
@@ -1209,6 +1219,42 @@
     ];
 
     // Seasonal Detailed Data
+    const seasonalData = {
+      spring: {
+        title: 'אביב (אפריל - יוני): פריחה משכרת, נחלים שוצפים וטמפרטורות מושלמות',
+        badge: 'העונה הטובה ביותר לטיולים וטבע',
+        icon: '🌸',
+        highlights: [
+          'פריחה פראית בכל פינה, מטעי שקדיות, פרחי בר ויערות אלונים מלבלבים.',
+          'נחלי הפלופונז (לוסיאוס, פולילימניו, נדה) במלוא עוצמת זרימתם – מושלם לרפטינג והליכות מים.',
+          'אתרים היסטוריים ומסלולי הליכה (כמו שביל מנאלון) במזג אוויר מלטף ללא חום כבד.',
+          'הטמפרטורות נוחות (20-25 מעלות), אידיאלי לסיורי יקבים בנמאה ולנסיעות נוף.'
+        ],
+        recommendation: 'המלצת זהב: בקרו בחודש מאי – ימי שמש ארוכים, פריחה בשיאה, מעט מאוד מטיילים ומפלים מלאי מים.'
+      },
+      summer: {
+        title: 'קיץ (יולי - אוגוסט): חופי טורקיז, שקיעות אינסופיות וטברנות דגים',
+        badge: 'חופשת חוף ים תיכונית אולטימטיבית',
+        icon: '☀️',
+        highlights: [
+          'מים צלולים וחמימים בחופי ווידוקיליה, חופי אלפוניסוס והמפרץ השקוף בלימני.',
+          'ערבים קרירים ונעימים בכפרי ההרים של ארקדיה וזירייה המשמשים מפלט מושלם מהחום.',
+          'פסטיבל התיאטרון הבינלאומי באפידאורוס העתיקה (סמוך לקורפוס) תחת כיפת השמיים.',
+          'ארוחות דגים ופירות ים טריים בטברנות שבהן השולחנות נושקים לקו הגלים.'
+        ],
+        recommendation: 'המלצת זהב: הגיעו לחופים המפורסמים לפני 09:30 בבוקר או לקראת שקיעה, ובצהריים תיהנו מהקרירות בנחלי פולילימניו ומעיינות פלאניטרו.'
+      },
+      autumn: {
+        title: 'סתיו (ספטמבר - נובמבר): בציר כרמים, מסיק זיתים ושלכת בוערת',
+        badge: 'העונה הקסומה והעשירה ביותר בטעמים',
+        icon: '🍂',
+        highlights: [
+          'עונת הבציר וטעימות יין ביקבי נמאה (55 דק׳ מהבית בקורפוס) במהלך ספטמבר.',
+          'הים עדיין חמים ונעים לרחצה עמוק לתוך אוקטובר, ללא עומסי תיירים כלל.',
+          'שלכת זהובה מרהיבה ביערות עצי הדולב, המייפל והערמון בטריקלה קורינתיאס ורכס פרנון (אוקטובר-נובמבר).',
+          'תחילת מסיק הזיתים בקלמטה וריחות שמן זית כפרי טרי בכל כפרי חצי האי.'
+        ],
+        recommendation: 'המלצת זהב: סוף אוקטובר עד אמצע נובמבר הוא הזמן האידיאלי לשלב שלכת מוזהבת בטריקלה קורינתיאס ופיקניק באגם דוקסה.'
       },
       winter: {
         title: 'חורף (דצמבר - מרץ): כפרי אבן רומנטיים, אח מבוערת וסקי בהרים',
@@ -1450,6 +1496,7 @@
       const place = placesData.find(p => p.id === id);
       if (!place) return;
 
+      document.body.classList.add('modal-open');
       const modal = document.getElementById('placeModal');
       const content = document.getElementById('modalContent');
       const fav = isFav(place.id);
@@ -1570,12 +1617,14 @@
     }
 
     function closeModal() {
+      document.body.classList.remove('modal-open');
       const modal = document.getElementById('placeModal');
       modal.classList.add('hidden');
       modal.classList.remove('flex');
     }
 
     function openFavoritesModal() {
+      document.body.classList.add('modal-open');
       renderFavoritesList();
       const modal = document.getElementById('favoritesModal');
       modal.classList.remove('hidden');
@@ -1583,6 +1632,7 @@
     }
 
     function closeFavoritesModal() {
+      document.body.classList.remove('modal-open');
       const modal = document.getElementById('favoritesModal');
       modal.classList.add('hidden');
       modal.classList.remove('flex');
